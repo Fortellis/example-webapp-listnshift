@@ -1,0 +1,25 @@
+.hero {
+  background: url('../assets/images/hero.jpg') no-repeat;
+  background-position: right center;
+  background-size: cover;
+  padding: 7.5vw 0;
+}
+
+.mdl-grid .hero {
+  margin: -16px -16px 16px;
+}
+
+.hero--compact {
+  padding: 5vw 0;
+}
+
+.hero__title {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.hero__loading-text {
+  opacity: .25;
+}

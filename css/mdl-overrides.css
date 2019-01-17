@@ -1,0 +1,50 @@
+h2 {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+}
+
+.mdl-navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mdl-navigation {
+    display: flex;
+  }
+}
+
+.mdl-switch__label {
+  display: inline-block;
+  left: 0;
+  margin-left: 24px;
+  min-width: 5.5em;
+}
+
+.mdl-progress {
+  margin: auto;
+  max-width: 500px;
+  width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+  .mdl-data-table th {
+    padding: 0 9px 6px 9px;
+  }
+
+  .mdl-data-table td {
+    padding: 6px 9px;
+  }
+
+  .mdl-data-table td:first-of-type,
+  .mdl-data-table th:first-of-type {
+    padding-left: 12px;
+  }
+
+  .mdl-data-table td:last-of-type,
+  .mdl-data-table th:last-of-type {
+    padding-right: 12px;
+  }
+}

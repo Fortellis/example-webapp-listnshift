@@ -1,0 +1,50 @@
+.vehicle-card {
+  /* display: flex;
+  flex-direction: row;
+  min-height: auto;
+  width: 100%; */
+  width: auto;
+}
+
+.vehicle-card__media {
+  background: #fff;
+  background-size: cover;
+  position: relative;
+}
+
+.vehicle-card__media::before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+
+.vehicle-card__media img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.vehicle-card__image {
+  /* width: 15em; */
+}
+
+.vehicle-card__content {
+
+}
+
+.vehicle-card__title-text {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vehicle-card__msrp {
+  font-size: 14px;
+}
+
+.vehicle-card__sale {
+  color: #c00;
+  display: inline-block;
+  font-size: 16px;
+  padding: 4px 0;
+}

@@ -1,0 +1,21 @@
+.api-calls-list {
+  padding: 0 5%;
+}
+
+.api-calls-list > ul {
+	counter-reset: call-counter;
+}
+
+.api-calls-list > ul > li {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.api-calls-list > ul > li::before {
+	content: counter(call-counter);
+	counter-increment: call-counter;
+  display: inline-block;
+  margin: 0 16px 0 -8px;
+  opacity: .5;
+}

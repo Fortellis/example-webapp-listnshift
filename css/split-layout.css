@@ -1,0 +1,61 @@
+.split-layout {
+  display: flex;
+}
+
+.split-layout__main {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  position: relative;
+  transition: min-width .2s ease-in-out;
+  width: 100%;
+}
+
+/* .split-layout__main-header {
+  background: url('../assets/images/2017-ford-gt-supercar.jpg') center / cover;
+  padding-bottom: 20%;
+} */
+
+.split-layout__side {
+  background: #eee;
+  position: relative;
+}
+
+.split-layout__side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  box-shadow: inset 0 0 1em rgba(0,0,0,.125);
+}
+
+.split-layout__side-header {
+  background: #444;
+}
+
+.split-layout__side-header .mdl-layout__header-row {
+  padding: 0 40px;
+}
+
+/* Hiding the sidebar */
+
+.split-layout--hide-side {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .split-layout__main {
+    min-width: 66.66%;
+    width: 66.66%;
+  }
+
+  .split-layout__side {
+    display: block;
+    min-width: 33.33%;
+    width: 33.33%;
+  }
+}
+
+.split-layout--hide-side .split-layout__main {
+  min-width: 100%;
+}

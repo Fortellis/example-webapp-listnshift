@@ -6,6 +6,8 @@ To use the application you must click the login button first which will prompt y
 
 If you'd like to see this running with more real data then click the Demo PLC button to reset the application and then toggle the Test Mode to off. Then re-run the process and you'll see it is running with a different Subscription-Id and will get back different data
 
+According to the serve npm package [readme](https://www.npmjs.com/package/serve) you'll need at least [Node.js LTS](https://nodejs.org/en/) although we have tried it with version 9 and it worked.
+
 ## Dev
 * npm install -g serve
 * serve
